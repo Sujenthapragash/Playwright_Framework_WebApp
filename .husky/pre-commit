@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+# Run Prettier to check formatting
+yarn prettier --check .
+
 # Run ESLint on staged files
 npx eslint .
